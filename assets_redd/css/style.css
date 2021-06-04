@@ -206,10 +206,9 @@ figcaption {
   vertical-align: middle;
 }
 .parallax {
-  background-image: url(/assets_redd/images/bg-parallax.jpg);
-  min-height: 60vh;
-  background-attachment: fixed;
-  background-position: top;
+  background-image: url(/assets_redd/images/back-numbers.png);
+  min-height: 75vh;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 40px;
@@ -951,8 +950,6 @@ h4 {
 
 .owl-item.active.center {
   filter: grayscale(1);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
 }
 
 .our-projects {
@@ -996,4 +993,78 @@ h4 {
 
 .our-projects {
   padding-bottom: 10vh;
+}
+
+.card-numbers {
+  padding: 0 15px 10px 15px;
+  min-height: 63%;
+  max-height: 63%;
+}
+
+.conteudo-card {
+  overflow: auto;
+  border: 1px solid #d8d8d8ba;
+  border-radius: 7px;
+  position: relative;
+}
+
+.card-principal {
+  padding: 0 15px 10px 15px;
+  min-height: 63%;
+  max-height: 63%;
+}
+
+.icon-teste {
+  position: absolute;
+  z-index: 99999;
+  margin-left: 7px;
+  margin-top: -8px;
+  background: #fff;
+  padding: 0 3px;
+}
+
+.circulo {
+  max-width: 18%;
+  min-width: 18%;
+  left: 10%;
+  position: relative;
+}
+
+.folha-01 {
+  width: 15%;
+  position: absolute;
+  margin-top: 9%;
+  left: 7%;
+  z-index: 9999;
+}
+
+.folha-02 {
+  width: 14%;
+  position: absolute;
+  margin-top: 26%;
+  left: 12%;
+  z-index: 9999;
+}
+
+.folha-03 {
+  width: 8%;
+  position: absolute;
+  margin-top: -9%;
+  right: 0;
+  z-index: 9999;
+}
+
+.folha-04 {
+  width: 7%;
+  position: absolute;
+  right: 8%;
+  z-index: 9999;
+}
+
+.folha-05 {
+  width: 12%;
+  position: absolute;
+  margin-top: 10%;
+  right: 10%;
+  z-index: 9999;
 }

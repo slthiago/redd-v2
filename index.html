@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="assets_redd/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" href="assets_redd/css/style.css">
+	<link rel="stylesheet" href="assets_redd/css/responsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="assets_redd/css/imagehover.min.css">
+	<link rel="stylesheet" href="assets_redd/owlCarousel/dist/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets_redd/owlCarousel/dist/owl.theme.default.min.css">
+	
+	<title>REDD | Sustainable</title>
+</head>
+
+<body>
+	
+	<!-- testa idioma e renderiza conteúdo em pt-br -->
+		<div class="conteudo">
+		<div class="counter-intro">
+			<div class="container text-center text-counter"> 
+				<h1 class="counter" id="counter_106">Loading...</h1>
+				<h1 class="title-counter">Hectares de floresta perdidos</h1>
+				<p class="span-counter text-center">Mundialmente em 2021</p><br>
+				<a href="#modal" role="button" class="btn btn-compensar">Compensar emissões</a>
+
+			</div>
+		</div>
+
+		<!-- MODAL -->
+		<div class="modal" id="modal" tabindex="-1">
+			<a href="#" class="modal__overlay" aria-label="Fechar"></a>
+			<div class="modal__content">
+				<a href="#" class="modal__close" aria-label="Fechar">x</a>
+				<div class="row">
+					<div class="col-md-12 text-center pb-5">
+						<h2 style="color: #fff">Compensar Emissões</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<?php echo do_shortcode('[contact-form-7 id="4928" title="REDD pt-br"]'); ?>
+					</div>
+					<div class="col-md-6 img-modal text-center">
+						<img src="assets_redd/images/compense.png" style="width: 80%; heigth: auto; margin-top: 35px" alt="Compensar Emissão">
+						<div>
+							<a href="https://storyset.com/nature" style="font-size: 7px;">Illustration by Freepik Storyset</a>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="row intro-redd">
+			<div class="redd-title col-md-12 text-center" style="margin: auto;">
+				<h2 style="color: #fff;"><b>REDD+:</b> Natural Climate Solution para dar suporte a estratégia corporativa de compensação de carbono de sua empresa.</h2>
+			</div>
+		</div>
+		<!--
+		<div class="container sumario">
+			<div class="row text-center" style="position: relative; left: 18%; padding: 0;">
+				<div class="col-2 border-right"><a href="">Sobre REDD+</a></div>
+				<div class="col-3 border-right"><a href="">Créditos de carbono premium</a></div>
+				<div class="col-2 border-right"><a href="">Contribua</a></div>
+				<div class="col-2"><a href="">Nossos projetos</a></div>
+			</div>
+		</div>
+		-->
+		<div class="container redd-about pt-5" style="padding: 0 50px 0 50px;">
+			<div class="row pb-5">
+				<div class="col-md-12 text-center" data-wow-duration = "1.5s" data-wow-delay = "0.5s">
+					<h1>SOBRE REDD+</h1>
+					
+				</div>
+			</div>
+			<div class="row" style="position: relative; left: 3%;">
+				<div class="col-3 redd-item cursor-pointer text-center" style="position: relative; left: 6%; padding: 0;" id="divredd1" onclick="MostrarREDD1()"> 
+					<img class="redd-img" src="assets_redd/images/icons/1.png" alt="">
+						<div class="text-content pt-4">
+							<h4>O QUE É?</h4>
+						</div>
+				</div>
+				<div class="col-1 text-center" style="position: relative; left: 3%; padding: 0;">
+					<i class="fas fa-arrow-right redd-arrow"></i>
+				</div>
+				<div class="col-3 redd-item cursor-pointer text-center" style="padding: 0;" id="divredd2" onclick="MostrarREDD2()">
+						<img class="redd-img" src="assets_redd/images/icons/2.png" alt="">
+						<div class="text-content pt-4">
+							<h4>COMO <br> FUNCIONA?</h4>
+						</div>
+				</div>
+				<div class="col-1 text-center" style="position: relative; right: 3%; padding: 0;">
+					<i class="fas fa-arrow-right redd-arrow"></i>
+				</div>
+				<div class="col-3 redd-item cursor-pointer text-center" style="position: relative; right: 6%; padding: 0;" id="divredd3" onclick="MostrarREDD3()">
+					<img class="redd-img" src="assets_redd/images/icons/3.png" alt="">
+						<div class="redd-text pt-4">
+							<h4>POR QUE <br> INVESTIR?</h4>
+						</div>
+				</div>
+			</div>
+
+			<div class="row" id="about-redd">
+				<div class="col-md-10" id="redd1">
+					<p class="pt-4" style="line-height: 30px;">REDD+ significa Redução de Emissões provenientes de Desmatamento e Degradação Florestal (REDD) e 
+					também inclui a conservação e aumento dos estoques de carbono florestal e o manejo sustentável 
+					das florestas (REDD+). Em outras palavras, o mecanismo possui como base a diminuição do desmatamento, conservação da floresta em pé, uso apropriado da terra e florestas, além do aumento nos estoques de carbono. <br>
+					Como sabemos, as florestas têm um papel essencial na regulação do clima, na conservação da biodiversidade e na proteção das bacias hidrográficas. 
+					Com o mecanismo REDD+, proprietários são incentivados a manter suas florestas nativas em pé por meio da venda dos créditos de carbono gerados.
+					</p>
+					<div class="text-center">
+						<a href="#modal" role="button" class="btn btn-compensar">Compensar emissões</a>
+					</div>
+				</div>
+				<div class="col-md-10" id="redd2">
+					<p class="pt-4" style="line-height: 30px;">A concretização de um projeto de REDD+ começa com um estudo para avaliar o risco do desmatamento na região e o tamanho da área de floresta 
+						que será conservada. Após o estudo, o projeto deve prever quais são as estratégias a serem adotadas para que a área seja efetivamente conservada: aumento de fiscalização, manejo sustentável, atividades com 
+						benefícios sociais e ambientais para a região, alternativas de geração de renda para a população que antes precisava desmatar, recuperação de áreas degradadas, etc. <br>
+						O projeto é então implementado e acompanhado com monitoramento e avaliações periódicas, capazes de medir a quantidade de CO2 evitada e também o sucesso das 
+						ações implementadas. Cada tonelada de carbono evitada equivale a 1 crédito de carbono, que é verificado de acordo com padrões internacionais e disponibilizado em plataformas de registro.
+						 A compra dos créditos gera conversão financeira para o projeto e consequências benéficas diretas para as comunidades ao entorno das florestas.
+					</p>
+					<div class="text-center">
+						<a href="#modal" role="button" class="btn btn-compensar">Compensar emissões</a>
+					</div>
+				</div>
+				<div class="col-md-10" id="redd3">
+					<p class="pt-4" style="line-height: 30px; ">Já se foi o tempo em que o investimento em questões ambientais era apenas marketing para a empresa. Agora, a valorização financeira e 
+						também o engajamento de funcionários e clientes finais depende de como a organização se posiciona e atua por um mundo mais sustentável.<br>
+						Investir em REDD+ é uma solução inovadora e uma das estratégias mais indicadas para incluir e melhorar a performance da empresa em práticas ESG (Environmental, Social, Governance). 
+						A empresa ainda passa a contribuir ativamente com os Objetivos do Desenvolvimento Sustentável da ONU, <a href="#sdg" style="color:#00689E"> saiba como, clicando aqui. </a> 
+						Neutralize suas emissões, e além de contribuir para o combate às mudanças climáticas, apoie a conservação da Amazônia e diversos programas sociais, ambientais e econômicos nesse bioma.						
+					</p>
+					<div class="text-center">
+						<a href="#modal" role="button" class="btn btn-compensar">Compensar emissões</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="parallax">
+			<h1 class="text-center">Benefícios adicionais gerados pelos nossos projetos</h1>
+			<div class="row counter-parallax">
+				<div class="col-4 numbers-container" >
+					<img src="/assets_redd/images/icon-01.png" class="numbers-img" alt="">
+					<h2>56.618.738</h2>
+					<p>Toneladas de CO2e evitadas</p>
+				</div>
+				<div class="col-4 numbers-container" style="position: relative; left: 5%;">
+					<img src="/assets_redd/images/icon-02.png" class="numbers-img" alt="">
+					<h2>194.112</h2>
+					<p>Hectares de floresta protegidos</p>
+				</div>
+				<div class="col-4 numbers-container" style="position: relative; left: 10%;">
+					<img src="/assets_redd/images/icon-03.png" class="numbers-img" alt="">
+					<h2>2.700</h2>
+					<p>Nº de pessoas beneficiadas</p>
+				</div>
+			</div>
+		</div>
+
+				
+		<div class="container section-carbono" style="padding-bottom:10px;">
+			<h1 class="text-center titles">CRÉDITOS DE <br>CARBONO PREMIUM</h1>
+			<div class="row" style="padding-top: 50px;">
+				<div class="col-md-6 text-right wow animate__animated animate__fadeIn" data-wow-duration = "2s" data-wow-delay = "0.5s">
+					<h2>PROTEJA <br><b style="color: #55b795;">FLORESTAS</b><br>E BENEFICIE <br>COMUNIDADES <br>LOCAIS.</h2>
+				</div>
+				<div class="col-md-6 carbono-premium wow animate__animated animate__fadeIn" style="max-width: 35%;" data-wow-duration = "2s" data-wow-delay = "0.5s">
+					<p>
+						Os projetos da Sustainable Carbon utilizam o SOCIALCARBON Standard, que é um padrão de qualidade que visa promover 
+						benefícios sociais, ambientais e econômicos a projetos de redução de carbono. Em cada monitoramento utilizando os Indicadores para projeto 
+						REDD na Amazônia do SOCIALCARBON, entidades certificadoras independentes verificam as melhorias ocorridas que deverão ser apontadas nos relatórios. 
+						Com isso garantimos, além das reduções de emissão, benefícios sociais para as comunidades e credibilidade para os nossos clientes, veja abaixo como nossos Projetos
+						impactam os objetivos de desenvolvimento sustentável da ONU.
+					</p>
+				</div>
+				
+				</div>
+				 
+			</div>
+		</div>
+
+		<div class="container standards">
+			<h4 class="text-center">Todos os nossos projetos são desenvolvidos utilizando padrões reconhecidos <br>mundialmente que garantem o desempenho e a qualidade das atividades.</h4>
+			<div class="row text-center">
+				<div class="col-md-3" >
+					<img class="logo-standard" src="/assets_redd/images/logo-01.png" alt="" style="position: relative; left: 45%;">
+				</div>
+				<div class="col-md-3">
+					<img class="logo-standard" src="/assets_redd/images/logo-02.png" alt="" style="position: relative; left: 15%;">
+				</div>
+				<div class="col-md-3">
+					<img class="logo-standard" src="/assets_redd/images/logo-03.png" alt="" style="position: relative; right: 15%;">
+				</div>
+				<div class="col-md-3">
+					<img class="logo-standard" src="/assets_redd/images/logo-04.png" alt="" style="position: relative; right: 45%;">
+				</div>
+			</div>
+		</div>
+
+		<div class="wrap">
+			<div class="bg-video">
+				<video autoplay muted loop>
+					<source src="assets_redd/images/bg-video.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 bg-video-text">
+						<div class="text-video wow animate__animated animate__fadeInUp"><p>Quando <br>investimento em </p><b>REDD+ <br>tem tudo a ver </b><p style="margin-top: 10px;">com o fim do desmatamento <br>na Amazônia</p></div>
+						<a id="play-video" class="video-play-button" href="#">
+							<span></span>
+						</a>
+						<div id="video-overlay" class="video-overlay">
+							<a class="video-overlay-close">&times;</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row" style="padding-top: 50px;">
+				<div class="col-md-12 text-center ods">
+					<h1 class="wow titles animate__animated animate__fadeIn" data-wow-duration = "1.5s" data-wow-delay = "0.5s">CONTRIBUA PARA OS OBJETIVOS DE <br>DESENVOLVIMENTO SUSTENTÁVEL</h1>
+					<p class="wow text-center animate__animated animate__fadeIn" data-wow-duration = "1.5s" data-wow-delay = "0.8s">
+						Veja as contribuições de nossos projetos REDD+ para os <br>objetivos de Desenvolvimento Sustentável da ONU
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="owl-carousel owl-theme pb-5"> 
+			<div class="item"><img src="assets_redd/images/ods/1.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/3.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/4.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/5.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/6.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/7.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/8.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/9.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/10.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/11.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/12.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/13.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/15.jpg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/16.jpeg" alt=""></div>
+			<div class="item"><img src="assets_redd/images/ods/17.jpg" alt=""></div>
+			
+		</div>
+
+		<div class="our-projects">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center" data-wow-duration = "1.5s" data-wow-delay = "0.5s">
+						<h1 class="titles">NOSSOS PROJETOS</h1>
+						<span>Projetos REDD Sustainable Carbon</span>
+					</div>
+				</div>
+				<!--CARDS PROJETOS-->
+				<div class="row" style="margin-top: 8vh;">
+					<div class="col-4 cursor-pointer text-center" style="padding: 0;" > 
+						<img class="project-img " src="assets_redd/images/madre-de-dios.jpg" alt="">
+							<div class="text-content pt-4">
+								<h4>MADRE DE DIOS</h4>
+							</div>
+							<div class="text-content pt-2">
+								<p style="line-height: 30px; color: #fff!important;">O projeto Madre de Dios está capacitando tribos indígenas e 
+									outras comunidades locais perto da área do projeto, com o objetivo de melhorar sua renda através 
+									de atividades sustentáveis. A iniciativas foram elaboradas com a participação da própria comunidade.
+								</p>
+							</div>
+					</div>
+					<div class="col-4 cursor-pointer text-center" style="padding: 0;">
+							<img class="project-img" src="assets_redd/images/marajo.jpg" alt="">
+							<div class="text-content pt-4">
+								<h4>MARAJÓ</h4>
+							</div>
+							<div class="text-content pt-2">
+								<p style="line-height: 30px;  color: #fff!important;">Localizado no interior da Ilha do Marajó, em uma das regiões de maior 
+								vulnerabilidade social do Brasil, o projeto contribui ativamente para a redução do desmatamento,
+								 geração de renda alternativa paras as comunidades locais e com o desenvolvimento sustentável da região.
+								</p>
+							</div>
+					</div>
+					<div class="col-4 cursor-pointer text-center" style="padding: 0;" >
+						<img class="project-img" src="assets_redd/images/santa-maria.jpg" alt="">
+							<div class="redd-text pt-4">
+								<h4>SANTA MARIA</h4>
+							</div>
+							<div class="text-content pt-2">
+								<p style="line-height: 30px;  color: #fff!important;">O projeto Santa Maria conserva mais de 
+									70.000 hectares da rica biodiversidade da floresta amazônica, e ainda gerou empregos para a comunidade. Isso só é possível, pois com o 
+									projeto de carbono foi desenvolvido um rigoroso sistema de monitoramento da região. 
+								</p>
+							</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+	
+	</div>				
+
+	
+	<script>
+		//CONTADOR INTRO
+function number_interval(start_value, growth_per_second, decimal_number, element) {  
+  var counter_start_time = new Date();
+  window.onload = function() {
+    element.innerHTML = "Loding ...";
+    var count_number = function() {
+      current_time = new Date();
+      seconds = (current_time.getTime() - counter_start_time.getTime()) / 1000;
+      current_value = start_value + (seconds * growth_per_second);
+	  current_value.toLocaleString('pt-BR');
+      format_output(current_value, decimal_number);
+      element.innerHTML = output_value;
+    }
+    setInterval(count_number, 10);
+  }
+}
+function format_time_output(number, length) {
+  var output = '' + number;
+  while (output.length < length) {
+    output = '0' + output;
+  }
+  return output;
+}
+function format_output(current_value, decimal_number) {
+  switch(decimal_number) {
+	  
+    default: output_value = formatDecimalOutput(current_value, decimal_number); break;
+    case 0: output_value = formatIntegerOutput(current_value); break;
+  }
+}
+function formatDecimalOutput(basenumber, decimal_number) {
+  const decimal = (basenumber.toFixed(decimal_number) % 1).toFixed(decimal_number).substring(2);
+  const integer = formatIntegerOutput(basenumber);
+  return integer + ',' + decimal;
+}
+function formatIntegerOutput(basenumber) {
+  output = "";
+  var j=0;
+  var i=0;
+  while (basenumber > 1) {
+    output = (Math.round(basenumber - 0.5) % 10) + output;
+    basenumber = basenumber / 10;
+    j++;
+    if (basenumber > 1 && j==3) {
+      output = "." + output;
+      j=0;
+    }
+    i++;
+  }
+  return output;
+};
+function dateDiffInSeconds(a, b) {
+  const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate(),a.getHours(),a.getMinutes(),a.getSeconds());
+  const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate(),b.getHours(),b.getMinutes(),b.getSeconds());
+  return Math.floor((utc2 - utc1) / 1000);
+}
+
+var a = new Date("2021-01-01 00:00:01");
+function getNow(){
+  var b = new Date();
+  return b
+}
+
+difference = dateDiffInSeconds(a, getNow());
+
+deforestation = difference * 0.3170979198
+number_interval(deforestation, 0.3170979198, 2, counter_106)
+
+
+
+//END CONTADOR
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+	<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+	<script src="assets_redd/js/main.js"></script>
+	<script src="assets_redd/owlCarousel/dist/owl.carousel.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".owl-carousel").owlCarousel({
+				loop: true,
+				margin: 10,
+				nav: true,
+				autoplay: true,
+				center: true,
+				autoplayTimeout: 4000,
+				stagePadding: 50,
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:5
+					},
+					1000:{
+						items:5
+				}
+    }
+
+			});
+		});
+	
+	</script>
+	
+
+</body>
+
+</html>

@@ -18,48 +18,48 @@ p {
 }
 @font-face {
   font-family: KontoraExtraBlack;
-  src: url(/assets_redd/fonts/Kontora\ ExtraBlack.otf);
+  src: url(../fonts/Kontora\ ExtraBlack.otf);
 }
 @font-face {
   font-family: KontoraRegular;
-  src: url(/assets_redd/fonts/Kontora\ Regular.otf);
+  src: url(../fonts/Kontora\ Regular.otf);
 }
 @font-face {
   font-family: KontoraBold;
-  src: url(/assets_redd/fonts/Kontora\ Bold.otf);
+  src: url(../fonts/Kontora\ Bold.otf);
 }
 @font-face {
   font-family: NexaBold;
-  src: url(/assets_redd/fonts/Nexa\ Bold.otf);
+  src: url(../fonts/Nexa\ Bold.otf);
 }
 @font-face {
   font-family: NexaLight;
-  src: url(/assets_redd/fonts/Nexa\ Light.otf);
+  src: url(../fonts/Nexa\ Light.otf);
 }
 @font-face {
   font-family: OpensansLight;
-  src: url(/assets_redd/fonts/OpenSans-Light.ttf);
+  src: url(../fonts/OpenSans-Light.ttf);
 }
 @font-face {
   font-family: OpensansRegular;
-  src: url(assets_redd/fonts/OpenSans-Regular.ttf);
+  src: url(..//fonts/OpenSans-Regular.ttf);
 }
 @font-face {
   font-family: OpensansSemiBold;
-  src: url(assets_redd/fonts/OpenSans-SemiBold.ttf);
+  src: url(../fonts/OpenSans-SemiBold.ttf);
 }
 @font-face {
   font-family: OpensansBold;
-  src: url(assets_redd/fonts/OpenSans-Bold.ttf);
+  src: url(../fonts/OpenSans-Bold.ttf);
 }
 @font-face {
   font-family: OpensansExtraBold;
-  src: url(assets_redd/fonts/OpenSans-ExtraBold.ttf);
+  src: url(../fonts/OpenSans-ExtraBold.ttf);
 }
 
 @font-face {
   font-family: PlutoCondBlack;
-  src: url(/assets_redd/fonts/PlutoCondBlack.ttf);
+  src: url(../fonts/PlutoCondBlack.ttf);
 }
 
 h1 {
@@ -103,7 +103,7 @@ p {
   position: relative;
 }
 .counter-intro {
-  background-image: url(/assets_redd/images/banner.png);
+  background-image: url(../images/banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -206,7 +206,7 @@ figcaption {
   vertical-align: middle;
 }
 .parallax {
-  background-image: url(/assets_redd/images/back-numbers.png);
+  background-image: url(../images/back-numbers.png);
   min-height: 75vh;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -562,11 +562,11 @@ header.header-layout .panel-header .language ul li.active a {
   opacity: 1;
 }
 header.header-layout .panel-header .language ul li.lang-pt a {
-  background-image: url(../assets/images/lang-br.png);
+  background-image: url(../images/lang-br.png);
   margin: 0 0 0 10px;
 }
 header.header-layout .panel-header .language ul li.lang-en a {
-  background-image: url(../assets/images/lang-eng.png);
+  background-image: url(../images/lang-eng.png);
 }
 header.header-layout .panel-header .language ul li a {
   width: 35px;
@@ -948,12 +948,44 @@ h4 {
   margin: 2vh 0 10vh 0;
 }
 
-.owl-item.active.center {
-  filter: grayscale(1);
+.item{
+  opacity:0.8;
+  transition:.4s ease all;
+  transform:scale(.8);
+  margin-left: -50px;
+  margin-right: -50px;
+  position:relative;
+  z-index: -1;
+}
+@media(max-width:1000px){
+  .item{margin:0; transform:scale(.9)}
+}
+.center.active .item{
+  opacity: 1;
+  transform:scale(.9);
+}
+.center.active{
+  position:absolute;
+  z-index: 99;
 }
 
+
+
+.owl-item {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.owl-carousel:after{content:""; display:block; position:absolute; width:8%; top:0; bottom:0; pointer-events: none; background-size:100% auto;
+}
+
+.owl-controls{position:absolute; margin-top:300px;}
+
+
+
+
 .our-projects {
-  background-image: url(/assets_redd/images/bg-projects.jpeg);
+  background-image: url(../images/bg-projects.jpeg);
   min-height: 60vh;
   background-attachment: fixed;
   background-position: top;

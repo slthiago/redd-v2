@@ -10,10 +10,16 @@
     font-size: 15px;
   }
 
+  .counter-intro {
+    height: 70vh;
+  }
+
   /* REDD TITLE */
   .redd-title,
   h2 {
-    font-size: 18px !important;
+    font-size: 16px !important;
+    text-align: left;
+    margin-left: 8px;
   }
 
   /* SECTION EXPLICAÇÃO */
@@ -41,7 +47,7 @@
   .video-play-button {
     position: absolute;
     z-index: 10;
-    top: 170%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     box-sizing: content-box;
@@ -240,6 +246,61 @@
 
   .ods-intro {
     font-size: 22px !important;
+  }
+
+  .section-carbono h2 {
+    font-size: 40px !important;
+    line-height: normal;
+    text-align: right;
+  }
+
+  .titles {
+    font-size: 22px !important;
+  }
+
+  .carbono-premium {
+    max-width: 100%;
+  }
+
+  .folha-01,
+  .folha-02 {
+    display: none;
+  }
+
+  .folha-03 {
+    width: 12%;
+    margin-top: -13%;
+  }
+
+  .folha-04 {
+    width: 10%;
+    margin-top: -5%;
+    margin-right: 4%;
+  }
+
+  .folha-05 {
+    width: 20%;
+    margin-top: 20%;
+    margin-right: 6%;
+  }
+
+  .circulo {
+    max-width: 30%;
+    left: -13%;
+    top: -10%;
+  }
+
+  .standards h4 {
+    margin-top: 1vh;
+  }
+
+  .standards img {
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .standards-none {
+    display: none;
   }
 }
 

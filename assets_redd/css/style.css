@@ -114,7 +114,7 @@ p {
   color: #fff;
 }
 .counter {
-  font-family: KontoraExtraBlack;
+  font-family: OpensansBold;
   font-size: 5rem;
 }
 .title-counter {
@@ -830,11 +830,18 @@ div.wpcf7-response-output {
 
 .sumario {
   margin: 50px 0 60px 0;
+  justify-content: center;
+  align-items: center;
 }
 .sumario a {
   font-family: NexaBold;
   font-size: 1.1rem;
   color: #868787;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.sumario div {
+  display: inline;
 }
 .sumario a:hover {
   color: #5d5d5d;
@@ -948,41 +955,50 @@ h4 {
   margin: 2vh 0 10vh 0;
 }
 
-.item{
-  opacity:0.8;
-  transition:.4s ease all;
-  transform:scale(.8);
+.item {
+  opacity: 0.8;
+  transition: 0.4s ease all;
+  transform: scale(0.8);
   margin-left: -50px;
   margin-right: -50px;
-  position:relative;
+  position: relative;
   z-index: -1;
 }
-@media(max-width:1000px){
-  .item{margin:0; transform:scale(.9)}
+@media (max-width: 1000px) {
+  .item {
+    margin: 0;
+    transform: scale(0.9);
+  }
 }
-.center.active .item{
+.center.active .item {
   opacity: 1;
-  transform:scale(.9);
+  transform: scale(0.9);
 }
-.center.active{
-  position:absolute;
+.center.active {
+  position: absolute;
   z-index: 99;
 }
 
-
-
 .owl-item {
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
 }
 
-.owl-carousel:after{content:""; display:block; position:absolute; width:8%; top:0; bottom:0; pointer-events: none; background-size:100% auto;
+.owl-carousel:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-size: 100% auto;
 }
 
-.owl-controls{position:absolute; margin-top:300px;}
-
-
-
+.owl-controls {
+  position: absolute;
+  margin-top: 300px;
+}
 
 .our-projects {
   background-image: url(../images/bg-projects.jpeg);
@@ -1035,11 +1051,20 @@ h4 {
 
 .conteudo-card {
   overflow: auto;
-  border: 1px solid #d8d8d8ba;
-  border-radius: 7px;
-  position: relative;
-  width: 300px;
-  height: 300px;
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  top: ;
+}
+
+.conteudo-card span {
+  font-family: NexaBold;
+  color: #6ec4ee;
+  line-height: 0;
+}
+
+.conteudo-card h2 {
+  font-size: 2.6vw !important;
 }
 
 .card-principal {
@@ -1049,14 +1074,12 @@ h4 {
   max-width: auto;
 }
 
-.icon-teste {
+.icon-card {
   position: absolute;
+  margin-top: -40%;
   z-index: 99999;
-  margin-top: -20px;
-  background: #fff;
-  padding: 0 3px;
-  margin-left: 20px;
-  font-size: 2em;
+  width: 28%;
+  padding: 0;
 }
 
 .circulo {
@@ -1103,4 +1126,41 @@ h4 {
   margin-top: 10%;
   right: 10%;
   z-index: 9999;
+}
+
+.owl-arrow {
+  border: 3px solid #fff;
+  color: #fff;
+  border-radius: 60%;
+  padding: 30%;
+  position: relative;
+  z-index: 9999999;
+  font-size: 3vw;
+}
+
+.owl-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.navegacao button {
+  border: none;
+  background-color: transparent;
+}
+
+#botao-anterior,
+#botao-proximo {
+  position: absolute;
+  top: 35%;
+}
+
+#botao-anterior {
+  left: 26%;
+}
+
+#botao-proximo {
+  right: 28%;
+}
+
+.carbono-premium {
+  max-width: 35%;
 }

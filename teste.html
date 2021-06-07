@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		.our-numbers {
+	position: relative;
+	background: #006da0;
+	min-width: 100%;
+	min-height: 300px;
+}
+.our-numbers:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 109, 160, 0);
+	border-top-color: #006da0;
+	border-width: 80px;
+	margin-left: -80px;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	color: #fff;
+	text-align: center;
+	padding-top: 5%;
+}
+
+	</style>
+</head>
+<body>
+		<div class="our-numbers">
+			<h1>teste</h1>
+		</div>
+	
+</body>
+</html>

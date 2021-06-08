@@ -1050,11 +1050,21 @@ h4 {
 }
 
 .conteudo-card {
-  overflow: auto;
-  position: absolute;
-  width: 250px;
-  height: 200px;
-  top: ;
+  border: 2px solid #fff;
+  width: 20vw;
+  height: 30vh;
+  padding: 15% 0 0 10%;
+}
+
+.border-super::before {
+  content: "";
+  width: 8vw;
+  height: 6px;
+  background-color: #046694;
+  display: block;
+  margin: -4px 15%;
+  z-index: 9999;
+  position: relative;
 }
 
 .conteudo-card span {
@@ -1076,9 +1086,9 @@ h4 {
 
 .icon-card {
   position: absolute;
-  margin-top: -40%;
+  margin: -12% 15%;
   z-index: 99999;
-  width: 28%;
+  width: 20%;
   padding: 0;
 }
 
